@@ -1,0 +1,123 @@
+/* Task 3 Custom CSS: Cafe Table Reservation - Black & Purple Theme */
+:root {
+  --bg-dark: #0c0a15;
+  --card-bg: #161226;
+  --border-color: #2e264f;
+  --purple-primary: #9333ea;
+  --purple-glow: rgba(147, 51, 234, 0.35);
+  --purple-hover: #7e22ce;
+  --text-main: #f3f2f8;
+  --text-muted: #a19ebc;
+  --danger-color: #f43f5e;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* Card Container */
+.cafe-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(147, 51, 234, 0.15);
+  overflow: hidden;
+}
+
+.cafe-header {
+  background: linear-gradient(135deg, #20153d 0%, #351659 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cafe-badge {
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.req {
+  color: var(--danger-color);
+  font-weight: bold;
+}
+
+.form-label, fieldset legend {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.92rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Form Controls */
+.form-control, .form-select {
+  background-color: #0f0d1c;
+  border: 1px solid var(--border-color);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control::placeholder {
+  color: #5d5977;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #141026;
+  border-color: var(--purple-primary);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem var(--purple-glow);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8) sepia(1) saturate(5) hue-rotate(240deg);
+  cursor: pointer;
+}
+
+/* Checkbox & Radio */
+.form-check-input {
+  background-color: #0f0d1c;
+  border: 1px solid var(--border-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--purple-primary);
+  border-color: var(--purple-primary);
+}
+
+.form-check-input:focus {
+  border-color: var(--purple-primary);
+  box-shadow: 0 0 0 0.2rem var(--purple-glow);
+}
+
+.form-check-label {
+  color: var(--text-main);
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.btn-reserve-submit {
+  background: linear-gradient(135deg, #9333ea 0%, #c084fc 100%);
+  border: none;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-reserve-submit:hover, .btn-reserve-submit:focus {
+  background: linear-gradient(135deg, #7e22ce 0%, #a855f7 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.6);
+  transform: translateY(-1px);
+}

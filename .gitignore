@@ -1,0 +1,8 @@
+# Materials, scripts and temporary files
+materials/
+*.py
+*.pdf
+screenshots/
+__pycache__/
+.vscode/
+.idea/

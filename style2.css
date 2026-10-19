@@ -1,0 +1,154 @@
+/* Task 2 Custom CSS: AITU Hack 2026 - Black & Purple Theme */
+:root {
+  --bg-dark: #0b0914;
+  --card-bg: #151226;
+  --border-color: #2b254a;
+  --purple-primary: #8b5cf6;
+  --purple-glow: rgba(139, 92, 246, 0.35);
+  --purple-hover: #7c3aed;
+  --text-main: #f1f0f7;
+  --text-muted: #9f9cb8;
+  --accent-badge: #6d28d9;
+  --danger-color: #f43f5e;
+  --success-color: #10b981;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* Card Container */
+.hack-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(139, 92, 246, 0.15);
+  overflow: hidden;
+}
+
+.hack-header {
+  background: linear-gradient(135deg, #1f1a3a 0%, #2e1a5a 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hack-badge {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.req {
+  color: #f43f5e;
+  font-weight: bold;
+}
+
+.form-label {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.92rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Form Controls */
+.form-control, .form-select {
+  background-color: #0e0c1a;
+  border: 1px solid var(--border-color);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control::placeholder {
+  color: #5d5977;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #120f22;
+  border-color: var(--purple-primary);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem var(--purple-glow);
+}
+
+/* Dark theme calendar and clock icons */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8) sepia(1) saturate(5) hue-rotate(220deg);
+  cursor: pointer;
+}
+
+/* Checkbox & Radio */
+.form-check-input {
+  background-color: #0e0c1a;
+  border: 1px solid var(--border-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--purple-primary);
+  border-color: var(--purple-primary);
+}
+
+.form-check-input:focus {
+  border-color: var(--purple-primary);
+  box-shadow: 0 0 0 0.2rem var(--purple-glow);
+}
+
+.form-check-label {
+  color: var(--text-main);
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.btn-hack-submit {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  border: none;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-hack-submit:hover, .btn-hack-submit:focus {
+  background: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Validation Styling using Native :user-invalid and :user-valid */
+.invalid-feedback {
+  display: none;
+  color: var(--danger-color);
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+}
+
+/* Show invalid feedback ONLY after the user has interacted / changed the field */
+:user-invalid ~ .invalid-feedback,
+.field-group:has(:user-invalid) > .invalid-feedback {
+  display: block;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: var(--danger-color) !important;
+  box-shadow: 0 0 0 0.15rem rgba(244, 63, 94, 0.25) !important;
+}
+
+input:user-valid:not(:invalid),
+select:user-valid:not(:invalid),
+textarea:user-valid:not(:invalid) {
+  border-color: var(--success-color) !important;
+}

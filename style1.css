@@ -1,0 +1,180 @@
+/* Task 1 Custom CSS: Train Ticket Booking */
+:root {
+  --teal-primary: #0F6B5F;
+  --amber-accent: #F2A93B;
+  --dark-green: #16302B;
+  --bg-page: #F4F7F5;
+  --border-tint: #E6EFEC;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--dark-green);
+  min-height: 100vh;
+}
+
+/* Card Styling */
+.ticket-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(22, 48, 43, 0.08);
+  border: 1px solid var(--border-tint);
+}
+
+.ticket-header {
+  background-color: var(--teal-primary);
+  color: #ffffff;
+  border-bottom: none;
+}
+
+/* Trip Type Segmented Buttons */
+.trip-type-group {
+  display: inline-flex;
+  background-color: var(--border-tint);
+  padding: 4px;
+  border-radius: 24px;
+}
+
+.trip-btn {
+  border-radius: 20px !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 18px;
+  color: var(--dark-green);
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-check:checked + .trip-btn {
+  background-color: var(--teal-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(15, 107, 95, 0.3);
+}
+
+/* Inputs, Selects, and Floating Labels */
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 1px solid #d2ded9;
+  font-family: var(--font-family);
+  font-size: 0.95rem;
+  color: var(--dark-green);
+  padding: 0.65rem 0.85rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--teal-primary);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+}
+
+.form-floating > .form-control {
+  border-radius: 10px;
+}
+
+.form-floating > label {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Input Group country code */
+.country-code {
+  background-color: var(--teal-primary);
+  color: #ffffff;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid var(--teal-primary);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Custom Radios & Checkboxes */
+.form-check-input:checked {
+  background-color: var(--teal-primary);
+  border-color: var(--teal-primary);
+}
+
+.form-check-input:focus {
+  border-color: var(--teal-primary);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+}
+
+.custom-radio .form-check-label,
+.custom-checkbox .form-check-label {
+  font-size: 0.92rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Action Buttons */
+.btn-ticket-clear {
+  border-radius: 20px;
+  padding: 8px 26px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #cbd7d2;
+  background-color: #ffffff;
+  color: var(--dark-green);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-ticket-clear:hover, .btn-ticket-clear:focus {
+  background-color: var(--border-tint);
+  border-color: #b5c7c0;
+  color: var(--dark-green);
+}
+
+.btn-ticket-find {
+  border-radius: 20px;
+  padding: 8px 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  background-color: var(--amber-accent);
+  color: var(--dark-green);
+  box-shadow: 0 4px 10px rgba(242, 169, 59, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-ticket-find:hover, .btn-ticket-find:focus {
+  background-color: #e59c2e;
+  color: var(--dark-green);
+  box-shadow: 0 6px 14px rgba(242, 169, 59, 0.4);
+}
+
+/* Mobile specific refinements */
+@media (max-width: 576px) {
+  body {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .ticket-card {
+    border-radius: 14px;
+  }
+  .ticket-header {
+    padding: 0.75rem 1rem !important;
+  }
+  .ticket-header h1 {
+    font-size: 1.15rem !important;
+  }
+  .card-body {
+    padding: 1rem !important;
+  }
+  .mb-4 {
+    margin-bottom: 0.85rem !important;
+  }
+  .mb-3 {
+    margin-bottom: 0.85rem !important;
+  }
+  .form-control, .form-select {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .btn-ticket-clear, .btn-ticket-find {
+    width: 100%;
+    text-align: center;
+    padding: 8px 16px;
+  }
+}
