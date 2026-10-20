@@ -1,4 +1,3 @@
-/* Task 3 Custom CSS: Cafe Table Reservation - Black & Purple Theme */
 :root {
   --bg-dark: #0c0a15;
   --card-bg: #161226;
@@ -18,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* Card Container */
 .cafe-card {
   background-color: var(--card-bg);
   border-radius: 20px;
@@ -54,7 +52,6 @@ body {
   margin-bottom: 0.4rem;
 }
 
-/* Form Controls */
 .form-control, .form-select {
   background-color: #0f0d1c;
   border: 1px solid var(--border-color);
@@ -81,7 +78,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-/* Checkbox & Radio */
 .form-check-input {
   background-color: #0f0d1c;
   border: 1px solid var(--border-color);
@@ -103,7 +99,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-/* Submit Button */
 .btn-reserve-submit {
   background: linear-gradient(135deg, #9333ea 0%, #c084fc 100%);
   border: none;

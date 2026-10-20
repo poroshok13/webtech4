@@ -1,4 +1,3 @@
-/* Task 1 Custom CSS: Train Ticket Booking */
 :root {
   --teal-primary: #0F6B5F;
   --amber-accent: #F2A93B;
@@ -15,7 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* Card Styling */
 .ticket-card {
   border-radius: 18px;
   overflow: hidden;
@@ -30,7 +28,6 @@ body {
   border-bottom: none;
 }
 
-/* Trip Type Segmented Buttons */
 .trip-type-group {
   display: inline-flex;
   background-color: var(--border-tint);
@@ -54,7 +51,6 @@ body {
   box-shadow: 0 2px 6px rgba(15, 107, 95, 0.3);
 }
 
-/* Inputs, Selects, and Floating Labels */
 .form-control, .form-select {
   border-radius: 10px;
   border: 1px solid #d2ded9;
@@ -78,7 +74,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Input Group country code */
 .country-code {
   background-color: var(--teal-primary);
   color: #ffffff;
@@ -90,7 +85,6 @@ body {
   padding-right: 1rem;
 }
 
-/* Custom Radios & Checkboxes */
 .form-check-input:checked {
   background-color: var(--teal-primary);
   border-color: var(--teal-primary);
@@ -108,7 +102,6 @@ body {
   user-select: none;
 }
 
-/* Action Buttons */
 .btn-ticket-clear {
   border-radius: 20px;
   padding: 8px 26px;
@@ -144,7 +137,6 @@ body {
   box-shadow: 0 6px 14px rgba(242, 169, 59, 0.4);
 }
 
-/* Mobile specific refinements */
 @media (max-width: 576px) {
   body {
     padding-top: 1rem !important;
