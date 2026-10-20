@@ -28,12 +28,12 @@ body {
 }
 
 .hack-header {
-  background: linear-gradient(135deg, #1f1a3a 0%, #2e1a5a 100%);
+  background: #1e1935;
   border-bottom: 1px solid var(--border-color);
 }
 
 .hack-badge {
-  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  background: var(--purple-primary);
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 600;
@@ -103,7 +103,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .btn-hack-submit {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  background: var(--purple-primary);
   border: none;
   color: #ffffff;
   border-radius: 12px;
@@ -114,7 +114,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .btn-hack-submit:hover, .btn-hack-submit:focus {
-  background: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+  background: var(--purple-hover);
   color: #ffffff;
   box-shadow: 0 6px 20px rgba(124, 58, 237, 0.6);
   transform: translateY(-1px);
