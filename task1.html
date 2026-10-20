@@ -93,7 +93,7 @@
                   <label for="phoneInput" class="form-label text-muted small fw-semibold">Phone</label>
                   <div class="input-group">
                     <span class="input-group-text country-code" id="phonePrefix">+7</span>
-                    <input type="tel" class="form-control form-control-custom" id="phoneInput" name="phone" placeholder="701 234 56 78" aria-describedby="phonePrefix" required>
+                    <input type="tel" class="form-control form-control-custom" id="phoneInput" name="phone" placeholder="701 234 56 78" aria-describedby="phonePrefix" required pattern="[0-9\s]+" inputmode="numeric">
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
